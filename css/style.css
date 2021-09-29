@@ -1,0 +1,25 @@
+
+body{
+    margin:0;
+}
+
+#container {
+    height: 100vh;
+
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'navbar documentation';
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+}
+
+#navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-doc {
+    grid-area: documentation;
+    overflow: auto;
+}
