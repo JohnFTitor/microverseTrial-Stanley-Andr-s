@@ -18,7 +18,8 @@ h1 {
 }
 
 code {
-    font-size: 1rem;    
+    font-size: 1.2rem; 
+    background-color: rgba(95, 95, 95, 0.116);   
 }
 
 p, li {
@@ -49,6 +50,7 @@ p, li {
     margin-left: 20px;
     border-left: 5px solid black;
     padding-left: 20px;
+    padding-bottom: 50px;
 }
 
 a{
