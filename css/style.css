@@ -1,6 +1,28 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Lato&display=swap');
+
 body{
     margin:0;
+}
+
+html {
+    font-family: 'Lato', sans-serif;    
+}
+
+h1 {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+.main-section h1{
+    font-size: 2rem;
+}
+
+code {
+    font-size: 1rem;    
+}
+
+p, li {
+    font-size: 1.5rem;
 }
 
 #container {
@@ -14,7 +36,7 @@ body{
 }
 
 #navbar {
-    grid-template-rows: repeat(auto-fit, 60px);
+    grid-template-rows: 100px repeat(auto-fit, 60px);
     grid-area: navbar;
     display: grid;
     /* margin: 2px; */
@@ -40,4 +62,22 @@ a{
 }
 a:hover{
     color: rgb(158, 11, 202);
+}
+
+nav header {
+    margin-left: 20px;
+    font-size: 1.2rem;    
+}
+
+@media Screen and (max-width: 480px) {
+    #container {
+        grid-template-areas: 'navbar' 'documentation';
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #navbar {
+        overflow: auto;
+    }
 }
